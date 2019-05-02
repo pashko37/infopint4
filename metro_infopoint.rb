@@ -3,7 +3,7 @@ require 'yaml'
 class MetroInfopoint
   def initialize(path_to_timing_file:'', path_to_lines_file:'')
     path_to_lines_file = path_to_lines_file != '' ? path_to_lines_file : File.join(Dir.pwd, 'config', "config.yml")
-    path_to_timing_file = path_to_timing_file != '' ? path_to_timing_file : File.join(Dir.pwd, 'config', "timing#{ENV['VARIANT']}.yml")
+    path_to_timing_file = path_to_timing_file != '' ? path_to_timing_file : File.join(Dir.pwd, 'config', "timing4.yml")
     @timing_data = YAML.load_file(path_to_timing_file)['timing']
 
     @nodes = []
