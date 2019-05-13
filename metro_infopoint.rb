@@ -90,3 +90,10 @@ class MetroInfopoint
 
 
 end
+
+ m = MetroInfopoint.new
+ p "input start station"
+ a = gets.chomp()
+ p "input finish station"
+ b = gets.chomp()
+ p m.calculate(from_station: a, to_station: b)
